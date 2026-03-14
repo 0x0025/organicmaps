@@ -112,6 +112,7 @@ import app.organicmaps.search.SearchFragmentController;
 import app.organicmaps.search.SearchPageViewModel;
 import app.organicmaps.search.SearchRequest;
 import app.organicmaps.settings.SettingsActivity;
+import app.organicmaps.navigator.NavigatorSettingsActivity;
 import app.organicmaps.util.SharingUtils;
 import app.organicmaps.util.ThemeSwitcher;
 import app.organicmaps.util.ThemeUtils;
@@ -1941,6 +1942,13 @@ public class MwmActivity extends BaseMwmFragmentActivity
   {
     SettingsActivity.startForVoiceInstructions(this);
   }
+  
+  public void onNavigatorSettingsOptionSelected()
+  {
+    Intent intent = new Intent(this, NavigatorSettingsActivity.class);
+    closeFloatingPanels();
+    startActivity(intent);
+  }
 
   private boolean startTrackRecording()
   {
@@ -2035,6 +2043,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
       if (!TextUtils.isEmpty(mDonatesUrl))
         items.add(new MenuBottomSheetItem(R.string.donate, R.drawable.ic_donate, this::onDonateOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.settings, R.drawable.ic_settings, this::onSettingsOptionSelected));
+      items.add(new MenuBottomSheetItem(R.string.navigator_settings, R.drawable.ic_navigator,
+                                        this::onNavigatorSettingsOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.start_track_recording, R.drawable.ic_track_recording_off, -1,
                                         this::onTrackRecordingOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.share_my_location, R.drawable.ic_share,

@@ -82,6 +82,8 @@
     <string name="list">List</string>
     <!-- Settings button in system menu -->
     <string name="settings">Settings</string>
+    <!-- Moto navigator settings button in main menu -->
+    <string name="navigator_settings">Moto Navigator</string>
     <!-- Header of settings activity where user defines storage path -->
     <string name="maps_storage">Save maps to</string>
     <!-- Detailed description of Maps Storage settings button -->

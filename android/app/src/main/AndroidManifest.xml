@@ -462,6 +462,13 @@
         android:parentActivityName="app.organicmaps.MwmActivity" />
 
     <activity
+        android:name="app.organicmaps.navigator.NavigatorSettingsActivity"
+        android:configChanges="orientation|screenLayout|screenSize"
+        android:screenOrientation="fullUser"
+        android:label="@string/navigator_settings"
+        android:parentActivityName="app.organicmaps.MwmActivity" />
+
+    <activity
         android:name="app.organicmaps.help.HelpActivity"
         android:label="@string/about_menu_title"
         android:parentActivityName="app.organicmaps.MwmActivity"
