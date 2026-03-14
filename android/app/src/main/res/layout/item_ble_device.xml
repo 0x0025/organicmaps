@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:gravity="center_vertical"
+  android:background="?clickableBackground"
+  android:paddingStart="16dp"
+  android:paddingEnd="16dp"
+  android:paddingTop="12dp"
+  android:paddingBottom="12dp">
+
+  <ImageView
+    android:id="@+id/device_icon"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_navigator"
+    android:tint="?colorAccent"
+    android:importantForAccessibility="no"/>
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_marginStart="16dp">
+
+    <TextView
+      android:id="@+id/device_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/MwmTextAppearance.Body1"
+      android:textColor="?android:textColorPrimary"/>
+
+    <TextView
+      android:id="@+id/device_address"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/MwmTextAppearance.Body3"
+      android:textColor="?android:textColorSecondary"/>
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/device_status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/MwmTextAppearance.Body3"
+    android:textColor="?colorAccent"
+    android:visibility="gone"/>
+
+</LinearLayout>

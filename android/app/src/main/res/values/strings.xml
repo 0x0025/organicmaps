@@ -84,6 +84,16 @@
     <string name="settings">Settings</string>
     <!-- Moto navigator settings button in main menu -->
     <string name="navigator_settings">Moto Navigator</string>
+    <string name="navigator_scan">Scan</string>
+    <string name="navigator_stop_scan">Stop</string>
+    <string name="navigator_scanning">Scanning…</string>
+    <string name="navigator_no_devices">No devices found. Tap Scan to search.</string>
+    <string name="navigator_connected">Connected</string>
+    <string name="navigator_connecting">Connecting…</string>
+    <string name="navigator_disconnected">Disconnected</string>
+    <string name="navigator_ble_not_supported">Bluetooth LE is not supported on this device</string>
+    <string name="navigator_bt_disabled">Bluetooth is disabled. Enable it to scan for devices.</string>
+    <string name="navigator_permission_denied">Bluetooth permission is required to scan for devices</string>
     <!-- Header of settings activity where user defines storage path -->
     <string name="maps_storage">Save maps to</string>
     <!-- Detailed description of Maps Storage settings button -->

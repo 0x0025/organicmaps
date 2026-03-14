@@ -293,6 +293,11 @@ def allowedPermissions = [
     "name='androidx.car.app.ACCESS_SURFACE'",
     // storage
     "name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='22'",
+    // bluetooth (BLE navigator)
+    "name='android.permission.BLUETOOTH' maxSdkVersion='30'",
+    "name='android.permission.BLUETOOTH_ADMIN' maxSdkVersion='30'",
+    "name='android.permission.BLUETOOTH_SCAN' usesPermissionFlags='neverForLocation'",
+    "name='android.permission.BLUETOOTH_CONNECT'",
     // internal permissions
     // comes from androidx.work:work-runtime:2.10.5
     "name='android.permission.RECEIVE_BOOT_COMPLETED'",
